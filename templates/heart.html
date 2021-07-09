@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Heart </title>
+	<link rel="stylesheet" href="../static/style.css">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body id="page2">
+	<div class="container_heart">
+		<div class="title_heart"> Heart Disease <br>Please enter the following details</div>
+		<form method="POST" action="{{url_for('predict_heart')}}">
+			<div class="heart_details">
+				<div class="input_field_heart"> 
+					<label class="details_heart">Age</label>
+					<input type="number" name="age" min="1" max="120" required>
+				</div>
+			  	<div class="input_field_heart"> 
+					<label class="details_heart">Gender</label>
+					<div class="user_select">
+						<select id="sex" name="sex">
+							<option value="0">Female</option>
+							<option value="1">Male</option>
+						</select>
+					</div>           
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Chest Pain</label>
+					<div class="user_select">
+						<select id="chestpain" name="chestpain">
+							<option value="0">Asymptomatic</option>
+							<option value="1">Atypical angina</option>
+			                <option value="2">Pain without relation to angina</option>
+			                <option value="3">Typical angina</option>
+			            </select>
+					</div>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Resting Blood Presure</label>
+					<input type="number" name="trestbps" min="1" max="200" required>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Cholestoral</label>
+					<input type="number" name="chol" min="1" max="250" required>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Fasting Blood Sugar and gt; 120 mg/dl</label>
+					<div class="user_select">
+						<select id="fbs" name="fbs">
+							<option value="0">No</option>
+                			<option value="1">Yes</option>
+            			</select>
+					</div>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Resting Electrocardiographic Result</label>
+					<div class="user_select">
+						<select id="restecg" name="restecg">
+			                <option value="0">Probable left ventricular hypertrophy</option>
+			                <option value="1">Normal</option>
+			                <option value="2">Abnormalities in the T wave or ST segment</option>
+			            </select>
+					</div>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Maximum Heart Rate Achieved</label>
+					<input type="number" name="thalach" min="1" max="500" required>
+				</div>
+				<div class="input_field_heart">
+					<label class="details_heart">Exercise Induced Angina</label>
+					<div class="user_select">
+						<select id="exang" name="exang">
+							<option value="0">No</option>
+                			<option value="1">Yes</option>
+                		</select>
+					</div>
+				</div>
+				<div class="input_field_heart"> 
+					<label class="details_heart">Exercise-induced ST depression</label>
+					<input type="number" name="oldpeak" min="0" max="10" step="0.01" required>
+				</div>
+				<div class="input_field_heart">
+					<label class="details_heart">Slope of the ST segment</label>
+					<div class="user_select">
+						<select id="slope" name="slope">
+				            <option value="0">Descending</option>
+				            <option value="1">Flat</option>
+				            <option value="2">Ascending</option>
+				        </select>
+					</div>
+				</div>
+				<div class="input_field_heart">
+					<label class="details_heart">Number of main blood vessels coloured</label>
+					<div class="user_select">
+						<select id="ca" name="ca">
+           		 			<option value="0">0</option>
+				            <option value="1">1</option>
+				            <option value="2">2</option>
+				            <option value="3">3</option>
+				            <option value="4">4</option>
+				        </select>
+					</div>
+				</div>
+				<div class="input_field_heart">
+					<label class="details_heart">Results of the blood flow</label>
+					<div class="user_select">
+						<select id="thal" name="thal">
+				            <option value="0">Null</option>
+				            <option value="1">Fixed defect</option>
+				            <option value="2">Normal blood flow</option>
+				            <option value="3">Reversible defect</option>
+				        </select>
+					</div>
+				</div>										
+				</div>
+			<div class="outer">
+
+			<div class="inner">
+				<input type="button" value="Back" onclick="history.back()"/>
+			</div>
+			<div class="inner">
+				<input type="reset" value="Reset">
+			</div>
+			<div class="inner">
+				<input type="submit" value="Submit">
+			</div>
+			</div>			
+			
+		</form>
+	</div>
+	
+</body> 
+</html>

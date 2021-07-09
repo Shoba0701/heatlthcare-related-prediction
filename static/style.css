@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box ;
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+	font-size: 12px;
+
+}
+body#page1
+{
+	display: flex;
+	background: #AF4F66;
+	height: 100vh;
+	justify-content: center;
+	padding-left: 10px;
+	align-items: center;
+
+
+}
+.container
+{
+	max-width: 900px;
+	width: 500px;
+	background: #F5B7B1;
+	margin: 20px auto;
+	padding: 25px 30px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.125) ;
+	border-radius: 5px;
+}
+.container .title{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: #490415 ;
+	text-align: center;
+
+}
+.container .title: :before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 30px;
+	background: #E61A80;
+}
+
+.container form .diabetes_details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+
+form .diabetes_details .input_field{
+	margin-bottom: 15px;
+	width: calc(100%/2 - 20px);
+}
+.diabetes_details .input_field .details{
+	display: block;
+	font-weight: 600;
+	margin-bottom: 3px;
+	font-size: 13px;
+}
+.diabetes_details .input_field input{
+	height: 35px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left:15px;
+	font-size: 15px;
+}
+.diabetes_details .input_field input:focus{
+	border: 2px solid #00FF00;
+}
+form .outer{
+	width:100%;
+    text-align: center;
+}
+form .inner{
+	display: inline-block;
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-left: 20px;
+
+}
+
+form input[type="button"]{
+	background: #F08080;
+	height: 35px;
+	width: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	border:#000000 ;
+	cursor: pointer;
+
+}
+form input[type="reset"]{
+	background: ##D8E1DF;
+	height: 35px;
+	width: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	border:#000000 ;
+	cursor: pointer;
+	
+}
+form input[type="submit"]{
+	background: #A52A2A;
+	height: 35px;
+	width: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	border:#000000 ;
+	cursor: pointer;
+
+
+}
+/*style for heart*/
+
+body#page2{
+	display: flex;
+	background: #CD4F39;
+	height: 100vh;
+	justify-content: center;
+	padding-left: 10px;
+	align-items: center;
+}
+.container_heart
+{
+	/*max-height: 1000px;*/
+	max-width: 900px;
+	width: 600px;
+	background: #FFC2B6;
+	margin: 20px auto;
+	padding: 25px 30px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.125) ;
+	border-radius: 5px;
+}
+.container_heart .title_heart{
+	font-size: 20px;
+	font-weight: 800;
+	margin-bottom: 15px;
+	color: #9D1309 ;
+	text-align: center;
+}
+.container_heart .title_heart: :before{
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 20px;
+	background: #E61A80;
+}
+.container_heart form .heart_details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 12px 0 8px 0;
+}
+form .heart_details .input_field_heart{
+	margin-bottom: 12px;
+	width: calc(100%/2 - 15px);
+}
+.heart_details .input_field_heart .details_heart{
+	display: inline-flex;
+	font-weight: 600;
+	margin-bottom: 2px;
+	font-size: 13px;
+}
+.heart_details .input_field_heart input{
+	height: 25px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left:10px;
+	font-size: 12px;
+}
+.heart_details .input_field_heart .user_select select{
+	height: 25px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left:10px;
+	font-size: 12px;
+}
+.heart_details .input_field_heart .user_select::before{
+	content: "";
+	position: absolute;
+	font-size: 12px;
+}
+.heart_details .input_field_heart input:focus{
+	border: 2px solid #00FF00;
+}
+.heart_details .input_field_heart select:focus{
+	border: 2px solid #00FF00;
+}
+/*style for cancer*/
+
+body#page3{
+	display: flex;
+	background:#85295c;
+	height: 100vh;
+	justify-content: center;
+	padding-left: 10px;
+	align-items: center;
+}
+.container_cancer
+{
+	/*max-height: 1000px;*/
+	max-width: 900px;
+	width: 600px;
+	background: #ffccff;
+	margin: 20px auto;
+	padding: 25px 30px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.125) ;
+	border-radius: 5px;
+}
+.container_cancer .title_cancer{
+	font-size: 20px;
+	font-weight: 800;
+	margin-bottom: 25px;
+	color: #660033 ;
+	text-align: center;
+}
+.container_cancer .title_cancer: :before{
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 20px;
+	background: #E61A80;
+}
+.container_cancer form .cancer_details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 12px 0 8px 0;
+}
+
+form .cancer_details .input_field_cancer{
+	margin-bottom: 12px;
+	width: calc(100%/2 - 15px);
+}
+.cancer_details .input_field_cancer .details_cancer{
+	display: inline-flex;
+	font-weight: 600;
+	margin-bottom: 2px;
+	font-size: 13px;
+}
+.cancer_details .input_field_cancer input{
+	height: 25px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left:10px;
+	font-size: 15px;
+}
+.cancer_details .input_field_cancer input:focus{
+	border: 2px solid #00FF00;
+}
+/*index*/
+body#index{
+	display: flex;
+	background-image: url(../static/background.jpg) ;
+	background-size: cover;
+	justify-content: center;
+	padding-left: 10px;
+	align-items: center;
+	background-repeat: no-repeat ;
+}
+.container_index .title{
+	font-size: 30px;
+	align-items: center;
+	margin-top: 10%;
+	color: white;
+	width: 100%;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.container_index .outer{
+	width:100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.container_index .inner{
+	display: inline-block;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 30px;
+	margin-right: 30px;
+
+}
+.container_index .inner .btn1{
+	width: 150px;
+	height: 50px;
+	font-size: 15px;
+	cursor: pointer;
+    background: #9999ff;
+}
+.container_index .inner .btn1:hover{
+	background: #000066;
+	color: #FFCCFF;
+
+}
+.container_index p{
+	font-size: 15px;
+	align-items: center;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-top: 30px;
+
+}
+/*prediction_diabetes*/
+body#page4{
+	display: flex;
+	background: #008080;
+	height: 100vh;
+	justify-content: center;
+	padding-left: 10px;
+	align-items: center;
+}
+.container_prediction_diabetes{
+	/*max-height: 1000px;*/
+	max-width: 500px;
+	width: 400px;
+	background: #b2d1b2;
+	margin: 25px auto;
+	padding: 25px 30px;
+	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.125) ;
+	border-radius: 5px;
+	align-items: center;
+	
+}
+.container_prediction_diabetes .title_prediction_diabetes{
+	font-size: 20px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.container_prediction_diabetes h1{
+	font-size: 15px;
+	align-items: center;
+	text-align: center;
+}
+.container_prediction_diabetes .after_disease{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 20px;
+
+
+}
+.container_prediction_diabetes a{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+

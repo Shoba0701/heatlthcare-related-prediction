@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Diabetes</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body id="page1">
+	<div class="container">
+		<div class="title"> Diabetes <br> <br>Please enter the following details</div>
+		<form method="POST" action="{{url_for('predict_diabetes')}}">
+			<div class="diabetes_details">
+				<div class="input_field"> 
+					<label class="details">No of Pregnancies</label>
+					<input type="number" name="pregnancy" min="0" max="20" required>
+				</div>
+			  	<div class="input_field"> 
+					<label class="details">Glucose</label>
+					<input type="number" name="glucose" min="1" max="250" required>
+				</div>
+				<div class="input_field"> 
+					<label class="details">Blood presure</label>
+					<input type="number" name="presure" min="1" max="250" required>
+				</div>
+				<div class="input_field"> 
+					<label class="details">Skin Thickness</label>
+					<input type="number" name="skin" min="1" max="60" required=>
+				</div>
+				<div class="input_field"> 
+					<label class="details">Insulin</label>
+					<input type="number" name="insulin" min="1" max="250" required>
+				</div>
+				<div class="input_field"> 
+					<label class="details">BMI</label>
+					<input type="number" name="bmi" min="1" max="100" step="0.01" required>
+				</div>
+				<div class="input_field"> 
+					<label class="details">Diabetes Pedigree Function</label>
+					<input type="number" name="DiabetesPedigreeFunction" min="0" max="20" step ="0.001" required>
+				</div>
+				<div class="input_field"> 
+					<label class="details">Age</label>
+					<input type="number" name="age" min="18" max="120" required>
+				</div>
+				</div>
+			<div class="outer">
+
+			<div class="inner">
+				<input type="button" value="Back" onclick="history.back()"/>
+			</div>
+			<div class="inner">
+				<input type="reset" value="Reset">
+			</div>
+			<div class="inner">
+				<input type="submit" value="Submit">
+			</div>
+			</div>			
+			
+		</form>
+	</div>
+	
+</body> 
+</html>

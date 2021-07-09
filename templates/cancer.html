@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Cancer </title>
+	<link rel="stylesheet" href="../static/style.css">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body id="page3">
+	<div class="container_cancer">
+		<div class="title_cancer"> Breast Cancer <br>Please enter the following details</div>
+		<form method="POST" action="{{url_for('predict_cancer')}}">
+			<div class="cancer_details">
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Radius Worst</label>
+					<input type="number" step="0.0001" name="radius_worst" min="0" max="20" required>
+				</div>
+			  	<div class="input_field_cancer"> 
+					<label class="details_cancer">Concave Points Worst</label>
+					<input type="number" step="0.0001" name="concave_points_worst" min="0" max="20" required>
+				</div>
+				<div class="input_field_cancer">
+					<label class="details_cancer">Concave Point Mean :</label>
+            		<input type="number" step="0.0001" name="concave_points_mean" min="0" max="20" required>
+            	</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Area Worst</label>
+					<input type="number" step="0.0001" name="area_worst" min="0" max="250" required>
+				</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Perimeter Worst</label>
+					<input type="number" step="0.0001" name="perimeter_worst" min="0" max="250" required>
+				</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Concavity Mean</label>
+					<input type="number" step ="0.0001" name="concavity_mean" min="0" max="10" required>
+				</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Area Standard Error</label>
+					<input type="number" step="0.0001" name="area_se" min="0" max="250" required>
+				</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Perimeter Mean</label>
+					<input type="number" step ="0.001" name="perimeter_mean" min="0" max="4" required>
+				</div>
+				<div class="input_field_cancer"> 
+					<label class="details_cancer">Radius Mean</label>
+					 <input type="number" step ="0.0001" name="radius_mean" min="0" max="10" required>
+				</div>
+				<div class="input_field_cancer">
+					<label class="details_cancer"> Concavity worst: </label>
+            		<input type="number" step ="0.0001" name="concavity_worst" min="0" max="10" required>
+            	</div>
+            	<div class="input_field_cancer">            
+            		<label class="details_cancer"> Area Mean: </label>
+            		<input type="number" step ="0.0001" name="area_mean" min="0" max="10" required>
+            	</div>
+            	<div class="input_field_cancer">            
+            		<label class="details_cancer"> Compactness Mean</label>
+            		<input type="number" step ="0.0001" name="compactness_mean" min="0" max="10" required>
+            	</div>
+				</div>
+			<div class="outer">
+
+			<div class="inner">
+				<input type="button" value="Back" onclick="history.back()"/>
+			</div>
+			<div class="inner">
+				<input type="reset" value="Reset">
+			</div>
+			<div class="inner">
+				<input type="submit" value="Submit">
+			</div>
+			</div>			
+			
+		</form>
+	</div>
+	
+</body> 
+</html>

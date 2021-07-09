@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>prediction_cancer</title>
+	<link rel="stylesheet" href="../static/style.css">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<body id="page4">
+	<div class="container_prediction_diabetes">
+		<div class="title_prediction_diabetes">Prediction</div>
+		{%if data == 0 %}
+        <h1> Wow.... You do not have Breast Cancer</h1>
+        
+        <img class="after_disease" src="../static/healthy1.jpg">
+        
+        {%else%}
+        <h1>Sorry... You may have Breast Cancer</h1>
+        
+        <img class="after_disease" src="../static/unhealthy.heart.png">
+        
+        {%endif%}
+        <a href="/"> Go back home page</a>
+	</div>
+</body>
+</html>
