@@ -31,7 +31,7 @@ This project consists of two major parts:
 
 - Model fitting-  final machine learning algorithm has been selected depending on the behavior of the dataset and the accuracy of the prediction during train and test.
 
-2.	Create web app and hosting it through Herako platform 
+2.	Create web app and hosting it through Heroku platform 
 - Creating HTML pages for end user to enter the measurements for each disease prediction Building a Flask app to get those users entered values to the fitted model Deployed the final model using Heroku.
 
 #### Installation
